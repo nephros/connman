@@ -108,6 +108,12 @@ static void stats_update_interval_remove(void *list_data, void *user_data)
 
 static void stats_set_active(struct connman_stats *stats, gboolean active)
 {
+	if (active) {
+		if ( connman_service_get_type(stats->service) == CONNMAN_SERVICE_TYPE_WIFI) {
+			connman_warn("service is type wifi, refusing to activate");
+			active = !active;
+		}
+	}
 	if (stats->active != active) {
 		if (stats->active) {
 			g_slist_foreach(stats->history_list,
