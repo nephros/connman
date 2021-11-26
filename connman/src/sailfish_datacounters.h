@@ -40,10 +40,10 @@ struct datahistory;
  * at run time?)
  */
 #ifndef STATS_SHORT_WRITE_PERIOD_SEC
-#  define STATS_SHORT_WRITE_PERIOD_SEC  (2)
+#  define STATS_SHORT_WRITE_PERIOD_SEC  (20)
 #endif
 #ifndef STATS_LONG_WRITE_PERIOD_SEC
-#  define STATS_LONG_WRITE_PERIOD_SEC   (30)
+#  define STATS_LONG_WRITE_PERIOD_SEC   (300)
 #endif
 
 /* Collection of data counters */
