@@ -193,7 +193,7 @@ This package provides OpenFortiNet VPN plugin for connman.
     --enable-sailfish-developer-mode \
     --enable-sailfish-wifi \
     --enable-sailfish-access \
-    --enable-sailfish-counters \
+    --disable-sailfish-counters \
     --enable-globalproxy \
     --disable-gadget \
     --disable-wispr \
