@@ -475,8 +475,8 @@ unit_test_sailfish_datacounter_CPPFLAGS = -I$(builddir)/src \
 	@GLIBUTIL_CFLAGS@ $(AM_CPPFLAGS)
 unit_test_sailfish_datacounter_CFLAGS = $(COVERAGE_OPT) $(AM_CFLAGS) \
 	-DDEFAULT_USER_STORAGE=\""$(userstorage)"\" \
-	-DSTATS_SHORT_WRITE_PERIOD_SEC=1 \
-	-DSTATS_LONG_WRITE_PERIOD_SEC=3 \
+	-DSTATS_SHORT_WRITE_PERIOD_SEC=20 \
+	-DSTATS_LONG_WRITE_PERIOD_SEC=300 \
 	-Ddatacounters_time_now=test_time_now \
 	-Dgutil_time_notify_new=test_time_notify_new \
 	-Dgutil_time_notify_ref=test_time_notify_ref \
@@ -517,8 +517,8 @@ unit_test_sailfish_datahistory_CPPFLAGS = -I$(builddir)/src \
 	@GLIBUTIL_CFLAGS@ $(AM_CPPFLAGS)
 unit_test_sailfish_datahistory_CFLAGS = $(COVERAGE_OPT) $(AM_CFLAGS) \
 	-DDEFAULT_USER_STORAGE=\""$(userstorage)"\" \
-	-DSTATS_SHORT_WRITE_PERIOD_SEC=1 \
-	-DSTATS_LONG_WRITE_PERIOD_SEC=3 \
+	-DSTATS_SHORT_WRITE_PERIOD_SEC=20 \
+	-DSTATS_LONG_WRITE_PERIOD_SEC=300 \
 	-Ddatacounters_time_now=test_time_now \
 	-Dgutil_time_notify_new=test_time_notify_new \
 	-Dgutil_time_notify_ref=test_time_notify_ref \
