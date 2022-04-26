@@ -274,6 +274,8 @@ src_connmand_CFLAGS = @DBUS_CFLAGS@ @GIO_CFLAGS@ @GOBJECT_CFLAGS@ @GLIB_CFLAGS@ 
 				-DDEFAULT_USER_STORAGE=\""$(userstorage)"\" \
 				-DCONFIGDIR=\""$(configdir)"\" \
 				-DDEFAULT_VPN_STATEDIR=\""$(vpn_statedir)"\" \
+				-DSTATS_SHORT_WRITE_PERIOD_SEC=20 \
+				-DSTATS_LONG_WRITE_PERIOD_SEC=300 \
 				-I$(builddir)/src
 
 EXTRA_DIST = src/genbuiltin src/connman-dbus.conf src/connman-polkit.conf \
